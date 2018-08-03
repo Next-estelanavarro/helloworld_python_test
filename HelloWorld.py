@@ -3,6 +3,7 @@
 class Greeter:
     def __init__(self):
         self.message = 'Hello world!'
+        pass
         #print self.message
 
     def get_message(self):

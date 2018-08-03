@@ -11,7 +11,7 @@ PROJECT := sdmt
 REGION := eu-west-1
 
 # Enviroment
-ENV := pre
+ENV := test
 
 # AWS profile as listed in credentials used to deploy and update lambdas
 PROFILE :=
@@ -42,7 +42,7 @@ COVERAGE_REPORTS_DIR = $(REPORT_DIR)/coverage
 QA_REPORTS_DIR = $(REPORT_DIR)/qa
 
 # Directory that holds lambda tests
-TESTS_DIR = tests
+TESTS_DIR = test
 
 # Apply targets on this function
 LAMBDA_FUNCTION :=

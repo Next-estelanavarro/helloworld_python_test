@@ -35,6 +35,9 @@ pipeline {
         }
 
         stage ('Setup_Environment') {
+            steps {
+                
+            }
             //docker.build('lambda-builder')
             // steps {
             //     sh """

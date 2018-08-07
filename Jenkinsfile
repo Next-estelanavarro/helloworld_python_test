@@ -4,14 +4,15 @@
  * Jenkinsfile
  */
 pipeline {
+    agent any 
     //agent { docker { image 'python:2.7' } }
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            dir 'build'
-            label 'lambda-builder'
-        }
-    }
+    // agent {
+    //     dockerfile {
+    //         filename 'Dockerfile'
+    //         dir 'build'
+    //         label 'lambda-builder'
+    //     }
+    // }
 
     environment {
         projectName = 'LambdaTestProject'

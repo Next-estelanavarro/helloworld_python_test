@@ -35,7 +35,7 @@ pipeline {
         }
 
         stage ('Setup_Environment') {
-            docker.build('lambda-builder')
+            //docker.build('lambda-builder')
             // steps {
             //     sh """
             //         apt-get update -y -q 

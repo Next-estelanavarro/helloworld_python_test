@@ -31,7 +31,18 @@ pipeline {
 
         stage ('Clone_Resource') {
             steps {
-                git url: 'https://github.com/BEEVA-JuanJaraices/helloworld_python_test.git'
+                //git url: 'https://github.com/BEEVA-JuanJaraices/helloworld_python_test.git'
+                checkout(
+                    [
+                        $class: "GitSCM", branches: [[name: "refs/heads/develop"]],
+                        doGenerateSubmoduleConfigurations: false,
+                        extensions: [],
+                        submoduleCfg: [],
+                        userRemoteConfigs: [
+                            [url: 'https://github.com/BEEVA-JuanJaraices/helloworld_python_test.git']
+                        ]
+                    ]
+                )
             }
         }
 

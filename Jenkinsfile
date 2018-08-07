@@ -34,10 +34,10 @@ pipeline {
             }
         }
 
-        stage ('Setup_Environment') {
-            steps {
+        // stage ('Setup_Environment') {
+        //     steps {
                 
-            }
+        //     }
             //docker.build('lambda-builder')
             // steps {
             //     sh """
@@ -50,7 +50,7 @@ pipeline {
             //         pip install --upgrade pip && pip install -q virtualenv
             //     """
             // }
-        }
+        // }
 
         stage ('Unit Test') {
         	steps {
